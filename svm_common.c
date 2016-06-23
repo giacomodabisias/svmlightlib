@@ -947,7 +947,7 @@ long get_runtime(void)
   return((long)((double)start*100.0/(double)CLOCKS_PER_SEC));
 }
 
-
+/*
 # ifdef _MSC_VER
 
 int isnan(double a)
@@ -956,7 +956,7 @@ int isnan(double a)
 }
 
 # endif 
-
+*/
 int space_or_null(int c) {
   if (c==0)
     return 1;
