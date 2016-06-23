@@ -291,10 +291,11 @@ long   get_runtime(void);
 int    space_or_null(int);
 void   *my_malloc(size_t); 
 void   copyright_notice(void);
+/*
 # ifdef _MSC_VER
    int isnan(double);
 # endif
-
+*/
 extern long   verbosity;              /* verbosity level (0-4) */
 extern long   kernel_cache_statistic;
 
