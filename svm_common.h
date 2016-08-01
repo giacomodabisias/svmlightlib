@@ -43,10 +43,12 @@
 # define RBF     2           /* rbf kernel type */
 # define SIGMOID 3           /* sigmoid kernel type */
 
-# define CLASSIFICATION 1    /* train classification model */
-# define REGRESSION     2    /* train regression model */
-# define RANKING        3    /* train ranking model */
-# define OPTIMIZATION   4    /* train on general set of constraints */
+enum Type {
+  CLASSIFICATION,    /* train classification model */
+  REGRESSION ,    /* train regression model */
+  RANKING,    /* train ranking model */
+  OPTIMIZATION    /* train on general set of constraints */
+};
 
 # define MAXSHRINK     50000    /* maximum number of shrinking rounds */
 
